@@ -2,9 +2,8 @@
     "version": 2,
     "name": "my-vercel-site",
     "builds": [
-        { "src": "*.html", "use": "@vercel/static" }
+        { "src": "*.html", "use": "@vercel/static" },
+        { "src": "*.css", "use": "@vercel/static" }
     ],
-    "routes": [
-        { "src": "/(.*)", "dest": "/$1.html" }
-    ]
+    "routes": [{ "src": "/(.*)", "dest": "/$1.html" }]
 }
